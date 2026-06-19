@@ -1,1 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Marck+Script&display=swap');
 @import "tailwindcss";
+
+@theme {
+    --font-marck: "Marck Script", cursive;
+}
+
+@theme {
+    --font-garamond: "Cormorant Garamond", serif;
+}
