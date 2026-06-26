@@ -94,7 +94,16 @@ Siga exatamente essa estrutura.
         }
     )
 
+    print("Status:", response.status_code)
+    print(response.text)
+
     data = response.json()
+
+    print(data)
+
+    if "choices" not in data:
+        raise Exception(data)
+
     conteudo = data["choices"][0]["message"]["content"]
 
     # Remove possíveis blocos markdown que o modelo retorne mesmo assim
